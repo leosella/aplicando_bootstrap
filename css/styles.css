@@ -1,0 +1,796 @@
+/* Detalle de CSS de Header */
+
+header {
+background-image: linear-gradient(rgba(241, 179, 35, 0.664), rgba(188, 103, 225, 0.649));    
+border-radius: 15px;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo1 {
+    width: 140px;
+}
+
+
+.logo1:hover {
+    transform: scale(1.5);
+    transition: 2s;
+}
+
+.lista-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista-nav li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.lista-nav a {
+    text-decoration: none;
+    color: #e3efee;
+    margin-right: 30px;
+    padding: 10px;
+    font-family: Verdana;
+    font-weight: 300px;
+}
+
+.lista-nav li:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.lista-nav a:hover {
+    color: #3383df7e;
+    transition: 2s;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+h1 {
+    font-family: Verdana;
+    font-size: 35px;
+    color: #264653;
+    text-align: center;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-portada {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+.cuotas-envios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2eeeeb5;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    gap: 50px;
+    height: 100px;
+}
+
+.icono {
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+}
+
+.cajaportada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 5px;
+}
+
+.cond {
+    color: #000000;
+    font-family: Verdana;
+    font-size: 25px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.vermas {
+    text-decoration: none;
+    color: rgb(29, 126, 237);
+    font-family: Verdana;
+    font-size: 15px;
+}
+/*////////////////////////////////////////////////////////////////////////*/
+
+.cuerpo {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Verdana;
+    font-size: 20px;  
+    background-color: #bfc5c829;  
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.portada2 {
+    width: 90%;
+    border-radius: 10px;
+}
+
+
+/*////////////////////////////////////////////////////////////////////////*/
+footer {
+    background-color: #4c9ac149;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie {
+    font-size: 15px;
+    font-family: Verdana;
+    justify-content: center;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+}
+
+.facebook img {
+    width: 10px;
+    height: 10px;
+}
+
+.rrss {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    gap: 50px;
+}
+
+.rrss li {
+    text-decoration: none;
+    list-style: none;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*PRODUCTOS*/
+
+.tabla-prod {
+    font-size: medium;
+    font-family: Verdana;
+    color: #3383df;
+    display: flex;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #000;
+}
+th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+    caption-side: bottom;
+}
+caption {
+    padding: 0.3em;
+    color: #fff;
+    background: #000;
+}
+
+th {
+    background: #eee;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+
+.productos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #3383df68;
+    border-radius: 2px;
+    padding-bottom: 7px;
+}
+
+.muestra {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.tarjeta {
+    background-color: #0b0e1241;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 30px;
+    font-family: Verdana;
+    font-size: medium;
+    color: #eaf7fc;
+    text-decoration: none;
+}
+
+hr {
+    line-height: 5px;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*MARCAS*/
+.marcas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 10px;
+
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*CONTACTO*/
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario {
+    font-family: Verdana;
+    font-size: medium;
+    color: #000000aa;
+    background-color: #d2791950;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.maps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    color: #000000;
+    background-color: #a8c6d5;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.sucursal {
+    font-family: Verdana;
+    font-size: medium;
+    color: #000000c8;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*COMUNIDAD*/
+
+.img-comunidad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.imagenes-rrss {
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*marcas*/
+
+/* Este estilo de CSS fue extraido de una web externa para agregar un mejor formato a la pagina Marcas*/
+
+* {
+    font-family: Verdana;
+}
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    transition: all 0.3s ease-out;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.contenedor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedor-cards .contenedor-card-item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width: 25%;
+    margin: 1%;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    border-radius: 5px;
+    cursor: help;
+}
+
+.contenedor-cards .contenedor-card-item:hover {
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.contenedor-card-item-wrapper {
+    overflow: hidden;
+    position: relative !important;
+    background: #3E2723;
+    border-radius: 5px;
+}
+
+.contenedor-card-item img {
+    max-width: 100%;
+    position: relative;
+    top: 0;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 5px;
+}
+
+.contenedor-card-item .contenedor-info {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: -70px;
+    -webkit-transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.contenedor-card-item .contenedor-info .fondo {
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.73) 53%, rgba(0,0,0,0.88) 100%);
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.73) 53%,rgba(0,0,0,0.88) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.73) 53%,rgba(0,0,0,0.88) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e0000000',GradientType=0 );
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.contenedor-card-item .contenedor-info .info {
+    color: #fff;
+    position: relative;
+    z-index: 500;
+    padding: 20px 15px;
+}
+
+.contenedor-card-item .contenedor-info .info .titulo {
+margin: 0;
+font-size: 20px;
+}
+
+.contenedor-card-item .contenedor-info .info .categoria {
+    display: block;
+    font-size: 10px;
+}
+
+.contenedor-card-item:hover .contenedor-info {
+    bottom: 0;
+}
+
+.contenedor-card-item:hover img {
+    top: -30px;
+    -webkit-transform: rotate(-5deg) scale(2);
+    -ms-transform: rotate(-5deg) scale(2);
+    -o-transform: rotate(-5deg) scale(2);
+    transform: rotate(-5deg) scale(2);
+}
+
+@media screen and (max-width: 900px) {
+    .contenedor-card-item:hover img {
+    top: -30px;
+    -webkit-transform: rotate(-5deg) scale(1.3);
+    -ms-transform: rotate(-5deg) scale(1.3);
+    -o-transform: rotate(-5deg) scale(1.3);
+    transform: rotate(-5deg) scale(1.3);
+}
+
+    .contenedor-card-item .contenedor-info {
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contenedor {
+        width: 95%;
+    }
+
+    .contenedor-cards .contenedor-card-item {
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+.contenedor-cards .contenedor-card-item {
+    width: 60%;
+    margin: 10px auto;
+}
+}
+
+@media screen and (max-width: 480px) {
+    .contenedor {
+        width: 90%;
+    }
+
+.contenedor-cards .contenedor-card-item {
+    width: 90%;
+}
+}
+
+@media screen and (max-width: 400px) {
+    .contenedor {
+        width: 100%;
+    }
+}
+
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*Comenzamos a utilizar GRIDS en nuestro archivo*/
+
+.fondo {  
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 2fr 8% 25% 25% 10%;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "encabezado encabezado"
+    "carrusel carrusel"
+    "envios pagos"
+    "producto1 texto1"
+    "texto2 producto2"
+    "footer footer";
+    background-image: (To left, red, yellow);;
+}
+
+.carrusel { 
+    grid-area: carrusel;
+    
+}
+
+.envios { 
+    grid-area: envios; 
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.envios:hover { 
+    background-color: #3383df7b;
+    transition: 1s;
+    transform: scale(1.03);
+}
+
+.pagos { 
+    grid-area: pagos; 
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagos:hover { 
+    background-color: #41df33ad;
+    transition: 1s;
+    transform: scale(1.03);
+}
+
+.producto1 { 
+    grid-area: producto1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.producto2 { 
+    grid-area: producto2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto1 { 
+    grid-area: texto1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.texto2 { 
+    grid-area: texto2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezado { 
+    grid-area: encabezado; 
+}
+
+.footer { 
+    grid-area: footer; 
+}
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*Aplicando Media queries Tablet*/
+
+@media screen and (max-width: 768px) {
+    .fondo {  
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 2fr 7% 7% 2fr 2fr 2fr 1fr 10%;
+        gap: 2px 2px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "encabezado"
+        "carrusel"
+        "envios" 
+        "pagos"
+        "producto1" 
+        "texto1"
+        "producto2"
+        "texto2"
+        "footer";
+    }
+    
+    .carrusel { 
+        grid-area: carrusel;
+        border-radius: 5px;
+    }
+    
+    .envios { 
+        grid-area: envios; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pagos { 
+        grid-area: pagos; 
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .producto1 { 
+        grid-area: producto1; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .producto2 { 
+        grid-area: producto2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .texto1 { 
+        grid-area: texto1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .texto2 { 
+        grid-area: texto2; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .encabezado { 
+        grid-area: encabezado;
+    }
+    
+    .footer { 
+        grid-area: footer; 
+    }
+    .cond {
+        color: #000000;
+        font-family: Verdana;
+        font-size: 20px;
+    }
+    .icono {
+        width: 30px;
+        height: 30px;
+        padding: 15px;
+    }
+    .portada2 {
+        width: 90%;
+        border-radius: 3px;
+        margin: 5px;
+    }
+
+    .portada2:hover {
+        transform: scale(2,1);
+    }
+
+    .lista-nav a {
+        margin-right: 10px;
+        padding: 5px;
+        font-weight: 100px;
+    }
+    .rrss {
+        gap: 10px;
+        margin: 0%;
+        padding: 0%;
+    }
+    .pie {
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+
+/*////////////////////////////////////////////////////////////////////////*/
+/*Aplicando Media queries Mobil*/
+
+@media screen and (max-width: 400px) {
+    .fondo {  
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 2fr 6% 6% 17% 17% 17% 10% 10%;
+        gap: 2px 2px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "encabezado"
+        "carrusel"
+        "envios" 
+        "pagos"
+        "producto1" 
+        "texto1"
+        "producto2"
+        "texto2"
+        "footer";
+    }
+    
+    .carrusel { 
+        grid-area: carrusel;
+        border-radius: 5px;
+    }
+    
+    .envios { 
+        grid-area: envios; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pagos { 
+        grid-area: pagos; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .producto1 { 
+        grid-area: producto1; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .producto2 { 
+        grid-area: producto2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .texto1 { 
+        grid-area: texto1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .texto2 { 
+        grid-area: texto2; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        font-size: 13px;
+    }
+    
+    .encabezado { 
+        grid-area: encabezado; 
+    }
+    
+    .footer { 
+        grid-area: footer; 
+    }
+    .cond {
+        color: #000000;
+        font-family: Verdana;
+        font-size: 20px;
+    }
+    .icono {
+        width: 30px;
+        height: 30px;
+        padding: 0px;
+    }
+    .portada2 {
+        width: 90%;
+        border-radius: 3px;
+        margin: 5px;
+    }
+    .lista-nav a {
+        margin-right: 10px;
+        padding: 5px;
+        font-weight: 200px;
+    }
+    .rrss {
+        gap: 10px;
+        margin: 0%;
+        padding: 0%;
+    }
+    .pie {
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
