@@ -7,7 +7,7 @@ border-radius: 15px;
 
 .encabezado {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -15,7 +15,6 @@ border-radius: 15px;
 .logo1 {
     width: 140px;
 }
-
 
 .logo1:hover {
     transform: scale(1.5);
@@ -69,7 +68,8 @@ h1 {
 }
 
 .img-portada {
-    width: 90%;
+    display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -87,10 +87,25 @@ h1 {
     height: 100px;
 }
 
+.envioypago {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
+    padding: 0px;  
+}
+
+.col {
+    padding: 0px; 
+}
+
 .icono {
-    width: 40px;
-    height: 40px;
-    padding: 30px;
+    width: 50px;
+    height: 50px;
 }
 
 .cajaportada {
@@ -120,15 +135,12 @@ h1 {
 
 .cuerpo {
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
     justify-content: space-evenly;
     align-items: center;
     font-family: Verdana;
     font-size: 20px;  
-    background-color: #bfc5c829;  
     border-radius: 10px;
-    padding: 50px;
+
 }
 
 .portada2 {
@@ -214,21 +226,18 @@ th {
 /*////////////////////////////////////////////////////////////////////////*/
 
 .productos {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-    background-color: #3383df68;
-    border-radius: 2px;
-    padding-bottom: 7px;
+
 }
 
 .muestra {
-    width: 400px;
+    width: 300px;
     border-radius: 10px;
+
 }
 
 .tarjeta {
+    display: flex;
+    direction: column;
     background-color: #0b0e1241;
     border-radius: 5px;
     padding: 15px;
@@ -237,6 +246,8 @@ th {
     font-size: medium;
     color: #eaf7fc;
     text-decoration: none;
+    align-items: center;
+    justify-content: center; 
 }
 
 hr {
@@ -333,9 +344,6 @@ hr {
 }
 
 .contenedor-cards .contenedor-card-item {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
     width: 25%;
     margin: 1%;
     -webkit-transition: all 0.3s ease-out;
@@ -467,330 +475,5 @@ font-size: 20px;
     }
 }
 
-
 /*////////////////////////////////////////////////////////////////////////*/
-/*Comenzamos a utilizar GRIDS en nuestro archivo*/
-
-.fondo {  
-
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 2fr 8% 25% 25% 10%;
-    gap: 5px 5px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    "encabezado encabezado"
-    "carrusel carrusel"
-    "envios pagos"
-    "producto1 texto1"
-    "texto2 producto2"
-    "footer footer";
-    background-image: (To left, red, yellow);;
-}
-
-.carrusel { 
-    grid-area: carrusel;
-    
-}
-
-.envios { 
-    grid-area: envios; 
-    background-color: aliceblue;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.envios:hover { 
-    background-color: #3383df7b;
-    transition: 1s;
-    transform: scale(1.03);
-}
-
-.pagos { 
-    grid-area: pagos; 
-    background-color: aliceblue;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.pagos:hover { 
-    background-color: #41df33ad;
-    transition: 1s;
-    transform: scale(1.03);
-}
-
-.producto1 { 
-    grid-area: producto1; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.producto2 { 
-    grid-area: producto2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.texto1 { 
-    grid-area: texto1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-}
-
-.texto2 { 
-    grid-area: texto2; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.encabezado { 
-    grid-area: encabezado; 
-}
-
-.footer { 
-    grid-area: footer; 
-}
-
-/*////////////////////////////////////////////////////////////////////////*/
-/*Aplicando Media queries Tablet*/
-
-@media screen and (max-width: 768px) {
-    .fondo {  
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr 2fr 7% 7% 2fr 2fr 2fr 1fr 10%;
-        gap: 2px 2px;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "encabezado"
-        "carrusel"
-        "envios" 
-        "pagos"
-        "producto1" 
-        "texto1"
-        "producto2"
-        "texto2"
-        "footer";
-    }
-    
-    .carrusel { 
-        grid-area: carrusel;
-        border-radius: 5px;
-    }
-    
-    .envios { 
-        grid-area: envios; 
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .pagos { 
-        grid-area: pagos; 
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .producto1 { 
-        grid-area: producto1; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    
-    .producto2 { 
-        grid-area: producto2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .texto1 { 
-        grid-area: texto1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        padding: 5px;
-        font-size: 13px;
-    }
-    
-    .texto2 { 
-        grid-area: texto2; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-        font-size: 13px;
-    }
-    
-    .encabezado { 
-        grid-area: encabezado;
-    }
-    
-    .footer { 
-        grid-area: footer; 
-    }
-    .cond {
-        color: #000000;
-        font-family: Verdana;
-        font-size: 20px;
-    }
-    .icono {
-        width: 30px;
-        height: 30px;
-        padding: 15px;
-    }
-    .portada2 {
-        width: 90%;
-        border-radius: 3px;
-        margin: 5px;
-    }
-
-    .portada2:hover {
-        transform: scale(2,1);
-    }
-
-    .lista-nav a {
-        margin-right: 10px;
-        padding: 5px;
-        font-weight: 100px;
-    }
-    .rrss {
-        gap: 10px;
-        margin: 0%;
-        padding: 0%;
-    }
-    .pie {
-        font-size: 15px;
-        justify-content: center;
-        text-align: center;
-    }
-}
-
-
-/*////////////////////////////////////////////////////////////////////////*/
-/*Aplicando Media queries Mobil*/
-
-@media screen and (max-width: 400px) {
-    .fondo {  
-        grid-template-columns: 100%;
-        grid-template-rows: 15% 2fr 6% 6% 17% 17% 17% 10% 10%;
-        gap: 2px 2px;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "encabezado"
-        "carrusel"
-        "envios" 
-        "pagos"
-        "producto1" 
-        "texto1"
-        "producto2"
-        "texto2"
-        "footer";
-    }
-    
-    .carrusel { 
-        grid-area: carrusel;
-        border-radius: 5px;
-    }
-    
-    .envios { 
-        grid-area: envios; 
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .pagos { 
-        grid-area: pagos; 
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .producto1 { 
-        grid-area: producto1; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    
-    .producto2 { 
-        grid-area: producto2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .texto1 { 
-        grid-area: texto1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        padding: 5px;
-        font-size: 13px;
-    }
-    
-    .texto2 { 
-        grid-area: texto2; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-        font-size: 13px;
-    }
-    
-    .encabezado { 
-        grid-area: encabezado; 
-    }
-    
-    .footer { 
-        grid-area: footer; 
-    }
-    .cond {
-        color: #000000;
-        font-family: Verdana;
-        font-size: 20px;
-    }
-    .icono {
-        width: 30px;
-        height: 30px;
-        padding: 0px;
-    }
-    .portada2 {
-        width: 90%;
-        border-radius: 3px;
-        margin: 5px;
-    }
-    .lista-nav a {
-        margin-right: 10px;
-        padding: 5px;
-        font-weight: 200px;
-    }
-    .rrss {
-        gap: 10px;
-        margin: 0%;
-        padding: 0%;
-    }
-    .pie {
-        font-size: 15px;
-        justify-content: center;
-        text-align: center;
-    }
-}
-
+/*APLICANDO BOOTSTRAP  MI CODIGO CSS*/

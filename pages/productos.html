@@ -5,133 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>SeNa SOTORE - Productos</title>
 </head>
 <body>
-    <header>
-        <nav class="encabezado">
-            <div>
-                <img class="logo1" src="../img/logo.png" alt="logo de la empresa">
-            </div>
-            <div>
-                <ul class="lista-nav">
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="productos.html">PRODUCTOS</a></li>
-                    <li><a href="marcas.html">MARCAS</a></li>
-                    <li><a href="comunidad.html">COMUNIDAD</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                    <li><a href="login.html">LOGIN</a></li>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../img/logo.png" alt="logo de la empresa" class="logo1">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/marcas.html">MARCAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/comunidad.html">COMUNIDAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pages/contacto.html">CONTACTO</a>
+                    </li>
                 </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
-        </nav>
-    </header>
-
+        </div>
+    </nav>
     <section>
         <h1>PRODUCTOS</h1>
     </section>
-    <hr>
-    <section>
-        <!-- En esta seccion agrego table con detalles de productos th es la fila de la table y td son los datos -->
-        <div >
-            <table border="1" class="tabla-prod">
-                <tr>
-                    <th>Producto</th>
-                    <th>Origen</th>
-                    <th>Tamano</th>
-                    <th>Color</th>
-                </tr>
-                <tr>
-                    <td>Collar</td>
-                    <td>China</td>
-                    <td>
-                        <ul>
-                            <li>XS</li>
-                            <li>S</li>
-                            <li>M</li>
-                            <li>L</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Blanco</li>
-                            <li>Rojo</li>
-                            <li>Multicolor</li>
-                            <li>Amarillo</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Pretal</td>
-                    <td>China</td>
-                    <td>
-                        <ul>
-                            <li>XS</li>
-                            <li>S</li>
-                            <li>M</li>
-                            <li>L</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Blanco</li>
-                            <li>Rojo</li>
-                            <li>Multicolor</li>
-                            <li>Amarillo</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Correa</td>
-                    <td>China</td>
-                    <td>
-                        <ul>
-                            <li>XS</li>
-                            <li>S</li>
-                            <li>M</li>
-                            <li>L</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Blanco</li>
-                            <li>Rojo</li>
-                            <li>Multicolor</li>
-                            <li>Amarillo</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </section>
-
-    <section class="productos">
-        <!-- En esta seccion agregaremos imagenes ilustrativas de los productos -->
-        <div class="tarjeta">
-            <h2>Collar</h2>
-            <img class="muestra" src="../img/collar.jpeg" alt="Foto de collar">
-        </div>
-        <div class="tarjeta">
-            <h2>Pretal</h2>
-            <img class="muestra" src="../img/Arnes.jpeg" alt="Foto de Pretal o Arnes">
-        </div>
-        <div class="tarjeta">
-            <h2>Correa</h2>
-            <img class="muestra" src="../img/correa.jpeg" alt="Foto de correa">
-        </div>
-    </section>
-<hr>
-    <footer >
-        <p class="pie">Seguinos en nuestras redes sociales Facebook - Instagram</p>
-        <a href="https://wa.me/5493525542450?text=Me%20interesa%20el%20auto%20que%20estás%20vendiendo" target="_blank"><img class="facebook" src="../img/face.png" alt=""></a>
-        
-            <div >
-                <ul class="rrss">
-                    <li><a href="https://www.facebook.com" target="_blank"><img class="icono" src="../img/facebook.png" alt="Logo Facebook"></a>
-                    </li>
-                    <li><a href="https://www.instagram.com" target="_blank"><img class="icono" src="../img/instagram.png" alt="Logo Instagram"></a>
-                </ul>
+<section>
+    <div class="card-group">
+            <div class="card">
+                <img src="../img/Arnes.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Pretal</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
-    </footer>
+        </div>
+            <div class="card">
+                <img src="../img/collar.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Collar</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+            <div class="card">
+                <img src="..//img/correa.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Correa</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<footer class="footer">
+    <p class="pie">Seguinos en nuestras redes sociales Facebook - Instagram</p>
+    <a href="https://wa.me/5493525542450?text=Me%20interesa%20el%20auto%20que%20estás%20vendiendo" target="_blank"><img class="whatsapp" src="../img/WAAP.png" alt=""></a>
+    
+        <div >
+            <ul class="rrss">
+                <li><a href="https://www.facebook.com" target="_blank"><img class="icono" src="../img/facebook.png" alt="Logo Facebook"></a>
+                </li>
+                <li><a href="https://www.instagram.com" target="_blank"><img class="icono" src="../img/instagram.png" alt="Logo Instagram"></a>
+            </ul>
+        </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
 </html>
